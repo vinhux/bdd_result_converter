@@ -1,0 +1,153 @@
+[
+    {
+      "keyword": "Feature",
+      "name": "BDD Examples",
+      "tags": [],
+      "location": "features/course/users.feature:1",
+      "status": "passed",
+      "elements": [
+        {
+          "type": "scenario",
+          "keyword": "Scenario",
+          "name": "some scenario",
+          "tags": [
+            "Working"
+          ],
+          "location": "features/course/users.feature:4",
+          "steps": [
+            {
+              "keyword": "Given",
+              "step_type": "given",
+              "name": "a set of specific users",
+              "location": "features/course/users.feature:5",
+              "table": {
+                "headings": [
+                  "name",
+                  "department"
+                ],
+                "rows": [
+                  [
+                    "Barry",
+                    "Beer Cans"
+                  ],
+                  [
+                    "Pudey",
+                    "Silly Walks"
+                  ],
+                  [
+                    "Two-Lumps",
+                    "Silly Walks"
+                  ]
+                ]
+              },
+              "match": {
+                "location": "features/steps/users.py:12",
+                "arguments": []
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0.0010023117065429688
+              }
+            },
+            {
+              "keyword": "When",
+              "step_type": "when",
+              "name": "we count the number of people in each department",
+              "location": "features/course/users.feature:11",
+              "match": {
+                "location": "features/steps/users.py:4",
+                "arguments": []
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0.0010025501251220703
+              }
+            },
+            {
+              "keyword": "Then",
+              "step_type": "then",
+              "name": "we will find two people in \"Silly Walks\"",
+              "location": "features/course/users.feature:14",
+              "match": {
+                "location": "features/steps/users.py:35",
+                "arguments": []
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0.0
+              }
+            },
+            {
+              "keyword": "But",
+              "step_type": "then",
+              "name": "we will find one person in \"Beer Cans\"",
+              "location": "features/course/users.feature:15",
+              "match": {
+                "location": "features/steps/users.py:43",
+                "arguments": []
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0.0010023117065429688
+              }
+            }
+          ],
+          "status": "passed"
+        },
+        {
+          "type": "scenario",
+          "keyword": "Scenario",
+          "name": "some scenario",
+          "tags": [
+            "Working"
+          ],
+          "location": "features/course/users.feature:4",
+          "steps": [
+            {
+              "keyword": "Given",
+              "step_type": "given",
+              "name": "a set of specific users",
+              "location": "features/course/users.feature:5",
+              "match": {
+                "location": "features/steps/users.py:12",
+                "arguments": []
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0.0010023117065429688
+              }
+            },
+            {
+              "keyword": "When",
+              "step_type": "when",
+              "name": "we count the number of people in each department",
+              "location": "features/course/users.feature:11",
+              "match": {
+                "location": "features/steps/users.py:4",
+                "arguments": []
+              },
+              "result": {
+                "status": "failed",
+                "duration": 0.0010025501251220703
+              }
+            },
+            {
+              "keyword": "Then",
+              "step_type": "then",
+              "name": "we will find two people in \"Silly Walks\"",
+              "location": "features/course/users.feature:14",
+              "match": {
+                "location": "features/steps/users.py:35",
+                "arguments": []
+              },
+              "result": {
+                "status": "failed",
+                "duration": 0.0
+              }
+            }
+          ],
+          "status": "failed"
+        }
+      ]
+    }
+]
